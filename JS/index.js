@@ -1,24 +1,23 @@
 (function() {
-  var cardsProduct = document.querySelectorAll('.cards__item-card');
-  var btncardsProduct = document.querySelectorAll('.cards__button');
-  var soldProduct = document.querySelector('.cards__item-card-disabled');
+  var cardsAbout = document.querySelectorAll('.cards__item-card');
+  var cardsAboutBtn = document.querySelectorAll('.cards__button');
 
-  for (var i = 0; i < cardsProduct.length; i++) {
-    cardsProduct[i].addEventListener('click', onCardProductClick);
-    cardsProduct[i].addEventListener('keydown', onCardProductKeyDown);
-    btncardsProduct[i].addEventListener('click', btncardsProductClick);
+  for (var i = 0; i < cardsAbout.length; i++) {
+    cardsAbout[i].addEventListener('click', onCardAboutClick);
+    cardsAbout[i].addEventListener('keydown', onCardAboutKeyDown);
+    cardsAboutBtn[i].addEventListener('click', cardsAboutBtnClick);
   }
 
-  function btncardsProductClick(evt) {
+  function cardsAboutBtnClick(evt) {
     var element = evt.target.parentNode.previousElementSibling;
     element.classList.toggle('cards__item-card-selected');
   }
 
-  function onCardProductClick(evt) {
+  function onCardAboutClick(evt) {
     this.classList.toggle('cards__item-card-selected');
   }
 
-  function onCardProductKeyDown(evt) {
+  function onCardAboutKeyDown(evt) {
     var KEY_CODE = {
       TAB: 9,
       ENTER: 13
