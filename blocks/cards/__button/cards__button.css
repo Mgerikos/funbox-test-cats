@@ -1,0 +1,11 @@
+.cards__button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  padding-bottom: 1px;
+  color: #1698d9;
+  font-weight: bold;
+  border-bottom: 1px dashed #1698d9;
+  text-shadow: -1px 2px 0 rgba(0, 0, 0, 1);
+  cursor: pointer;
+}

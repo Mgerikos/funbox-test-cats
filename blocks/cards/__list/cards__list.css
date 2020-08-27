@@ -1,0 +1,31 @@
+.cards__list {
+  width: inherit;
+}
+
+
+@media screen and (min-width: 720px) {
+  .cards__list {
+    max-width: 720px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .cards__item {
+    width: 320px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cards__item:first-child {
+    margin-right: 6.25%;
+  }
+}
+
+

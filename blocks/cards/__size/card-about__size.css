@@ -1,0 +1,65 @@
+.card-about__size {
+  font-size: 42px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1698d9;
+  border-radius: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 81px;
+  height: 81px;
+  padding: 23px 5px;
+  position: absolute;
+  bottom: 11px;
+  right: 11px;
+}
+
+.card-about__size span {
+  font-size: 21px;
+  line-height: 21px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.cards__item-card:hover .card-about__size,
+.cards__item-card:focus .card-about__size {
+  background-color: #2ea8e6;
+}
+
+.cards__item-card-disabled .card-about__text,
+.cards__item-card-disabled .card-about__title,
+.cards__item-card-disabled .card-about__gift  {
+  color: #b3b3b3;
+}
+
+.cards__item-card-disabled .card-about__size,
+.cards__item-card-disabled:focus .card-about__size {
+  background-color: #b3b3b3;
+}
+
+.cards__item-card-selected .card-about__size {
+  background-color: #d91667;
+}
+
+.cards__item-card-selected:hover .card-about__text,
+.cards__item-card-selected:focus .card-about__text {
+  display: none;
+}
+
+.cards__item-card-selected:hover .card-about__text-focus,
+.cards__item-card-selected:focus .card-about__text-focus {
+  display: block;
+}
+
+.cards__item-card-selected:hover .card-about__size,
+.cards__item-card-selected:focus .card-about__size {
+  background-color: #e62e7a;
+}
+
+

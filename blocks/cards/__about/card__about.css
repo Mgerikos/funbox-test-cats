@@ -1,0 +1,9 @@
+.card__about {
+  position: relative;
+}
+
+
+.card-about__text-focus {
+  color: #e52e7a;
+  display: none;
+}

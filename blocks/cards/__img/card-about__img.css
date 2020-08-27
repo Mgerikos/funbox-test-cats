@@ -1,0 +1,5 @@
+.card-about__img {
+  display: block;
+  border-bottom-left-radius: 10px;
+  margin-left: -45px;
+}

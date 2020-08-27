@@ -1,0 +1,14 @@
+.card-about__text {
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.card-about__text-focus {
+  color: #e52e7a;
+  display: none;
+}
+
+
+

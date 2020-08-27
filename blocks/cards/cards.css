@@ -1,0 +1,41 @@
+@import url(../cards/__about/card__about.css);
+@import url(../cards/__button/cards__button.css);
+@import url(../cards/__gift/card-about__gift.css);
+@import url(../cards/__img/card-about__img.css);
+@import url(../cards/__item-card/cards__item-card.css);
+@import url(../cards/__item/cards__item.css);
+@import url(../cards/__list/cards__list.css);
+@import url(../cards/__size/card-about__size.css);
+@import url(../cards/__text/card-about__text.css);
+@import url(../cards/__title/card-about__title.css);
+@import url(../cards/__title/cards__title.css);
+
+
+.cards {
+  width: inherit;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-width: inherit;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .cards {
+    padding: 0;
+  }
+
+  .cards__list {
+    max-width: 1120px;
+  }
+
+  .cards__item,
+  .cards__item:first-child {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .cards__item:last-child {
+    margin-right: 0;
+  }
+}

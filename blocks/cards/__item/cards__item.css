@@ -1,0 +1,49 @@
+.cards__item {
+  width: 100%;
+  max-width: 320px;
+  min-height: 513px;
+  margin: 0 auto 50px;
+  padding-top: 4px;
+  padding-left: 4px;
+
+}
+
+@media screen and (min-width: 500px) {
+  .cards__item {
+    width: 50%;
+
+  }
+}
+
+
+
+
+.cards__item-text {
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  text-shadow: -1px 2px 0 rgba(0, 0, 0, 1);
+  color: #ffffff;
+  margin: 0;
+}
+
+.cards__item-text-disabled {
+  color: #ffff66;
+}
+
+.cards__item .cards__item-text-selected,
+.cards__item .cards__item-text-disabled,
+.cards__item-card-selected ~ .cards__item-text-disabled,
+.cards__item-card-disabled ~ .cards__item-text-selected,
+.cards__item-card-selected ~ .cards__item-text,
+.cards__item-card-disabled ~ .cards__item-text {
+  display: none;
+}
+
+.cards__item-card-selected ~ .cards__item-text-selected,
+.cards__item-card-disabled ~ .cards__item-text-disabled {
+  display: block;
+}
+
+
+

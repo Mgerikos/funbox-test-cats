@@ -1,0 +1,12 @@
+.card-about__title {
+  font-size: 48px;
+  line-height: 31px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.card-about__title span{
+  font-size: 24px;
+}

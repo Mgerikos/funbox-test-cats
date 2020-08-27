@@ -1,0 +1,95 @@
+.cards__item-card {
+  width: 320px;
+  min-height: 400px;
+  border-radius: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  margin-bottom: 19px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  color: #666666;
+  background-color: #f2f2f2;
+  background:-o-linear-gradient(315deg, transparent 30px, #f2f2f2 0);
+  background:linear-gradient(135deg, transparent 30px, #f2f2f2 0);
+}
+
+.cards__item-card::before {
+  content: '';
+  width: 320px;
+  min-height: 500px;
+  height: calc(100% + 6px);
+  z-index: -1;
+  border-radius: 5px;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background-color: #1698d9;
+  background:-o-linear-gradient(315deg, transparent 31px, #1698d9 0);
+  background:linear-gradient(135deg, transparent 31px, #1698d9 0);
+}
+
+
+
+.cards__item-card:hover::before,
+.cards__item-card:focus::before {
+  background-color: #2ea8e6;
+  background:-o-linear-gradient(315deg, transparent 31px, #2ea8e6 0);
+  background:linear-gradient(135deg, transparent 31px, #2ea8e6 0);
+}
+
+.cards__item-card-disabled::before,
+.cards__item-card-disabled::before,
+.cards__item-card-disabled:focus::before {
+  background-color: #b3b3b3;
+  background:-o-linear-gradient(315deg, transparent 31px, #b3b3b3 0);
+  background:linear-gradient(135deg, transparent 31px, #b3b3b3 0);
+}
+
+.cards__item-card-selected::before {
+  background-color: #d91667;
+  background:-o-linear-gradient(315deg, transparent 31px, #d91667 0);
+  background:linear-gradient(135deg, transparent 31px, #d91667 0);
+}
+
+.cards__item-card-selected:hover::before,
+.cards__item-card-selected:focus::before {
+  background-color: #e62e7a;
+  background:-o-linear-gradient(315deg, transparent 31px, #e62e7a 0);
+  background:linear-gradient(135deg, transparent 31px, #e62e7a 0);
+}
+
+.cards__item-text {
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  margin: 0;
+  text-shadow: -1px 2px 0 rgba(0, 0, 0, 1);
+  color: #ffffff;
+}
+
+.cards__item-text-disabled {
+  color: #ffff66;
+}
+
+.cards__item .cards__item-text-selected,
+.cards__item .cards__item-text-disabled,
+.cards__item-card-selected ~ .cards__item-text-disabled,
+.cards__item-card-disabled ~ .cards__item-text-selected,
+.cards__item-card-selected ~ .cards__item-text,
+.cards__item-card-disabled ~ .cards__item-text {
+  display: none;
+}
+
+.cards__item-card-selected ~ .cards__item-text-selected,
+.cards__item-card-disabled ~ .cards__item-text-disabled {
+  display: block;
+}
+
+.cards__item-card-disabled {
+  pointer-events: none;
+}
+
+
