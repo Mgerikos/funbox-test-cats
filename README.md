@@ -2,6 +2,8 @@
 
 ## Level 1.
 
+* [Project URL](https://mgerikos.github.io/funbox-test-cats/)
+
 
 ### 1. Расскажите, чем, на ваш взгляд, отличается хорошая верстка от плохой с точки зрения
 
