@@ -1,5 +1,3 @@
-'use strict';
-
 (function() {
   var cardsProduct = document.querySelectorAll('.cards__item-card');
   var btncardsProduct = document.querySelectorAll('.cards__button');
